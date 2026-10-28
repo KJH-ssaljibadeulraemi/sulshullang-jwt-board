@@ -173,11 +173,11 @@ npm run preview
 - AI 사용 여부: **사용**
 - 도구와 사용 목적: Claude (Anthropic, claude.ai, 앱 표시 모델 Claude Opus 5.5) — 과제 문서 분석과 진행 순서 안내, 개발 환경(VS Code, Node.js, Git, Thunder Client) 설정 안내, 코드 초안 작성, 오류 원인 확인, 테스트 절차 안내, 증거 캡처 정리(파일명 변경과 토큰 가림), README·보고서 문장 정리
 - 반영 위치와 직접 수정·검증한 내용
-  - `backend-express/src/auth.js` (`loadSecret`, `loadTtl`, `issueToken`, `currentUserId`, `assertOwner`): AI 초안을 적용한 뒤 Thunder Client로 200/401/403 응답을 직접 확인하고 자동 검사 40개·48개 통과를 확인
+  - `backend-express/src/auth.js` (`loadSecret`, `loadTtl`, `issueToken`, `currentUserId`, `assertOwner`): AI 초안을 거의 그대로 적용한 뒤 Thunder Client로 200/401/403 응답을 직접 확인하고 자동 검사 40개·48개 통과를 확인
   - `frontend-vue/src/api.js`, `frontend-vue/src/App.vue`의 `<script>`: AI 초안을 적용한 뒤 Network 탭에서 Authorization 헤더, 204/400/401/403 화면 처리를 확인
   - 화면 제목·문구(술슐랭 테마), `app.js` 시작 로그 문구, `.env` 키 설정: 본인 작성
 - 상세 활용 기록: [보고서 5절](docs/report.pdf)
-- 참고 자료: 수업 제공 시작 코드와 과제 문서(`docs/01~07`), jsonwebtoken 공식 문서(https://github.com/auth0/node-jsonwebtoken), Vue 공식 문서(https://vuejs.org), Express 공식 문서(https://expressjs.com)
+- 참고 자료: 수업 제공 시작 코드와 과제 문서(`docs/01~07`, `tools/check_api.py`), 제공된 의존성 jsonwebtoken(https://github.com/auth0/node-jsonwebtoken)
 
 ## 제출 확인
 
